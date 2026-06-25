@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Risk Dashboard — 2026-W25</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #111827; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #1f2937; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#1e3a5f,#1e40af);border-radius:16px;padding:28px 32px;margin-bottom:24px;color:#fff">
+    <div style="font-size:0.85rem;opacity:0.75;margin-bottom:4px">IT Risk Dashboard</div>
+    <h1 style="font-size:1.6rem;font-weight:800;margin-bottom:4px">Weekly Threat Report — 2026-W25</h1>
+    <div style="font-size:0.85rem;opacity:0.75">Generated: 2026-06-25 13:37 UTC &nbsp;·&nbsp; 111 signals processed</div>
+    <div style="display:flex;gap:16px;margin-top:20px;flex-wrap:wrap">
+      <div style="background:rgba(239,68,68,0.2);border:1px solid rgba(239,68,68,0.4);border-radius:10px;padding:10px 18px;text-align:center">
+        <div style="font-size:1.6rem;font-weight:800">2</div>
+        <div style="font-size:0.78rem;opacity:0.85">🔴 Critical</div>
+      </div>
+      <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:10px;padding:10px 18px;text-align:center">
+        <div style="font-size:1.6rem;font-weight:800">9</div>
+        <div style="font-size:0.78rem;opacity:0.85">🟠 High</div>
+      </div>
+      <div style="background:rgba(234,179,8,0.2);border:1px solid rgba(234,179,8,0.4);border-radius:10px;padding:10px 18px;text-align:center">
+        <div style="font-size:1.6rem;font-weight:800">25</div>
+        <div style="font-size:0.78rem;opacity:0.85">🟡 Medium</div>
+      </div>
+      <div style="background:rgba(34,197,94,0.2);border:1px solid rgba(34,197,94,0.4);border-radius:10px;padding:10px 18px;text-align:center">
+        <div style="font-size:1.6rem;font-weight:800">75</div>
+        <div style="font-size:0.78rem;opacity:0.85">🟢 Low</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top 3 summary -->
+  <div class="card" style="margin-bottom:24px">
+    <div style="font-weight:700;font-size:1rem;margin-bottom:12px;color:#1f2937">📋 Top 3 this week</div>
+    <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
+          <span style="font-size:1.2rem">🔴</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Defense Contractor Impersonation Malware Targeting Supply Chain Partne</span>
+          <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">90/100</span>
+        </div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
+          <span style="font-size:1.2rem">🔴</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Fake Browser Updates Delivering Ransomware to Corporate Networks</span>
+          <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">90/100</span>
+        </div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
+          <span style="font-size:1.2rem">🟠</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Malicious Code Hidden in Popular Developer Library</span>
+          <span style="background:#f97316;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">70/100</span>
+        </div>
+  </div>
+
+  <!-- Scope note -->
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px 16px;margin-bottom:24px;font-size:0.87rem;color:#1e40af">
+    📌 <strong>Scope:</strong> Based on external public sources only. KPI/KRI/KCI tracking requires internal system integration (GRC, TSCM) — Phase 4+.
+  </div>
+
+  <!-- Risk Translation -->
+  <h2>Risk Translation</h2>
+  <p style="color:#6b7280;font-size:0.9rem;margin-bottom:20px">Per finding: what is happening and what does it mean — financially, operationally and for IT?</p>
+  
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
+      <div style="background:#ef4444;padding:14px 20px;display:flex;align-items:center;gap:12px">
+        <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">1</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Defense Contractor Impersonation Malware Targeting Supply Chain Partners</span>
+        <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">90/100</span>
+      </div>
+      <div style="padding:16px 20px">
+        <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Vulnerability Management</span>
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 OTX</span>
+        </div>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> Attackers are sending fake documents impersonating a Ukrainian drone manufacturer to trick defense and procurement networks into installing remote-control malware that gives criminals full access to systems.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: If we fail to act, our organization or our vendor partners could be compromised, leading to theft of sensitive procurement data, policy information, or financial records that could be used for fraud or espionage.</em></p>
+        <table style="width:100%;border-collapse:collapse;background:#fef2f2;border-radius:8px;overflow:hidden;margin-bottom:14px">
+          <thead>
+            <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Impact</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Level</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💰 Financial</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">A breach through this supply chain vector could expose confidential underwriting data, claims information, or customer records, triggering regulatory fines under GDPR/CCPA, litigation costs, and substantial reputational damage in a trust-dependent industry. Claims exposure from policy-holders affected by data theft could be severe.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">🏢 Organisational</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Remote-control malware deployed through this chain could enable attackers to disrupt claims processing, policy administration, or financial transaction systems, forcing manual workarounds and potentially halting customer-facing services. Lateral movement to critical infrastructure could compromise multiple business units.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💻 IT</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">This is an active, zero-day threat with no patch available; the malware uses advanced evasion (mTLS certificates) and is already in-the-wild. Immediate endpoint detection, network segmentation, and threat hunting across supply chain touchpoints are required to prevent exploitation.</td>
+        </tr>
+          </tbody>
+        </table>
+        <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
+          <strong>✅ Recommended action:</strong> Initiate emergency vendor security audit of all defense/aerospace suppliers and procurement partners; deploy advanced malware detection signatures organization-wide; and conduct phishing simulation focused on vendor impersonation within 72 hours.
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
+      <div style="background:#ef4444;padding:14px 20px;display:flex;align-items:center;gap:12px">
+        <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">2</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Fake Browser Updates Delivering Ransomware to Corporate Networks</span>
+        <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">90/100</span>
+      </div>
+      <div style="padding:16px 20px">
+        <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Employee Awareness</span>
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 OTX</span>
+        </div>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> Criminals disguise malware as browser updates on compromised websites to trick employees into downloading ransomware that grants attackers access to corporate networks and sensitive data.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Employees will continue to fall victim to fake update prompts, leading to ransomware infections that encrypt policyholder data, customer records, and core business systems.</em></p>
+        <table style="width:100%;border-collapse:collapse;background:#fef2f2;border-radius:8px;overflow:hidden;margin-bottom:14px">
+          <thead>
+            <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Impact</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Level</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💰 Financial</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">A successful ransomware attack on an insurance/finance company triggers regulatory fines, mandatory breach notification costs, claims payouts for affected customers, and potential loss of policyholder trust and market share. Reputational damage alone can reduce enterprise value significantly.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">🏢 Organisational</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Ransomware encryption of underwriting systems, claims processing, or customer portals halts revenue-generating operations and prevents policy issuance and claims settlement. Recovery time measured in days or weeks directly impacts financial performance and regulatory compliance.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💻 IT</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">The SocGholish malware framework remains actively distributed despite law enforcement disruption; employee browsers remain the primary attack surface requiring immediate awareness training and technical controls. Email filtering, endpoint detection, and browser security extensions must be deployed and verified within days.</td>
+        </tr>
+          </tbody>
+        </table>
+        <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
+          <strong>✅ Recommended action:</strong> Launch mandatory phishing simulation and browser security training for all employees within 7 days, deploy endpoint detection agents firm-wide, and implement browser update warnings in corporate browsers to block fake update prompts.
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
+      <div style="background:#f97316;padding:14px 20px;display:flex;align-items:center;gap:12px">
+        <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">3</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Malicious Code Hidden in Popular Developer Library</span>
+        <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">70/100</span>
+      </div>
+      <div style="padding:16px 20px">
+        <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Vulnerability Management</span>
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 OTX</span>
+        </div>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> A widely-used software library (node-ipc) was compromised by attackers who inserted hidden malware designed to steal sensitive credentials like API keys, database passwords, and cloud access tokens from developer machines.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Attackers will systematically harvest authentication credentials from our development environments, cloud accounts, and databases, enabling unauthorized access to core systems and data.</em></p>
+        <table style="width:100%;border-collapse:collapse;background:#fff7ed;border-radius:8px;overflow:hidden;margin-bottom:14px">
+          <thead>
+            <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Impact</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Level</th>
+              <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280;font-weight:600">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💰 Financial</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Stolen credentials could enable fraudulent transactions, unauthorized access to customer data, and regulatory fines under GDPR/PCI-DSS. Breach notification costs and potential liability claims from compromised customer accounts represent severe financial exposure.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">🏢 Organisational</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Compromised developer credentials and cloud access could allow attackers to modify applications, access customer databases, or inject further malware into production systems. This directly threatens service availability and data integrity.</td>
+        </tr>
+            
+        <tr>
+          <td style="padding:8px 12px;font-weight:600;white-space:nowrap">💻 IT</td>
+          <td style="padding:8px 12px">
+            <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
+          </td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">The malware actively targets SSH keys, cloud credentials, and configuration files—all present in typical development environments. Immediate patching and credential rotation is essential; assume any developer machine using affected versions (9.1.6, 9.2.3, 12.0.1) is compromised.</td>
+        </tr>
+          </tbody>
+        </table>
+        <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
+          <strong>✅ Recommended action:</strong> Immediately audit all development environments for the three affected package versions; revoke and rotate all SSH keys, cloud service credentials, and database passwords from potentially compromised machines; block the malicious package versions in your npm proxy/repository.
+        </div>
+      </div>
+    </div>
+
+  <!-- Other findings -->
+  <h2>Other Findings (rank 4–10)</h2>
+  <div class="card">
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr style="background:#f9fafb;border-bottom:2px solid #e5e7eb">
+        <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280">#</th>
+        <th style="padding:8px 12px;text-align:left;font-size:0.8rem;color:#6b7280">Bevinding</th>
+        <th style="padding:8px 12px;text-align:center;font-size:0.8rem;color:#6b7280">Score</th>
+        <th style="padding:8px 12px;text-align:center;font-size:0.8rem;color:#6b7280">💰</th>
+        <th style="padding:8px 12px;text-align:center;font-size:0.8rem;color:#6b7280">🏢</th>
+        <th style="padding:8px 12px;text-align:center;font-size:0.8rem;color:#6b7280">💻</th>
+      </tr></thead>
+      <tbody><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">4</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Fake Browser Updates Delivering Ransomware to Financial Site</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">70</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">5</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Malicious Browser Extension Deploys Ransomware and Backdoor</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">65</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">6</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Active Ransomware Gang Using New Stealthy Backdoor to Target</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">65</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">7</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Critical Remote Attack Risk in Web Server Software</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">63</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">8</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Sophisticated APT Phishing Campaign Targeting Financial Sect</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">62</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">9</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Third-Party Tool Compromised, Customer Data Exposed</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">60</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+        </tr><tr style="border-bottom:1px solid #f3f4f6">
+          <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">10</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Salesforce Data Breach via Compromised Third-Party Integrati</td>
+          <td style="padding:8px 12px;text-align:center">
+            <span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">60</span>
+          </td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+          <td style="padding:8px 12px;text-align:center">🟠</td>
+          <td style="padding:8px 12px;text-align:center">🔴</td>
+        </tr></tbody>
+    </table>
+  </div>
+
+  <!-- Sources -->
+  <h2>Sources</h2>
+  <div class="card" style="display:flex;gap:16px;flex-wrap:wrap">
+    <span style="background:#f3f4f6;padding:6px 14px;border-radius:8px;font-size:0.88rem"><strong>2</strong> Rss Krebs</span><span style="background:#f3f4f6;padding:6px 14px;border-radius:8px;font-size:0.88rem"><strong>15</strong> Rss Bleepingcomputer</span><span style="background:#f3f4f6;padding:6px 14px;border-radius:8px;font-size:0.88rem"><strong>45</strong> Rss Hackernews</span><span style="background:#f3f4f6;padding:6px 14px;border-radius:8px;font-size:0.88rem"><strong>49</strong> Otx</span>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;color:#9ca3af;font-size:0.8rem;margin-top:32px;padding-bottom:24px">
+    IT Risk Dashboard · External public sources only · Peter Van Walsem — Head of IT Risk Management
+  </div>
+
+</div>
+</body>
+</html>
