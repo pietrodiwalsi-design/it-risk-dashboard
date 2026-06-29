@@ -19,14 +19,14 @@
   <div style="background:linear-gradient(135deg,#1e3a5f,#1e40af);border-radius:16px;padding:28px 32px;margin-bottom:24px;color:#fff">
     <div style="font-size:0.85rem;opacity:0.75;margin-bottom:4px">IT Risk Dashboard</div>
     <h1 style="font-size:1.6rem;font-weight:800;margin-bottom:4px">Weekly Threat Report — 2026-W26</h1>
-    <div style="font-size:0.85rem;opacity:0.75">Generated: 2026-06-29 15:53 UTC &nbsp;·&nbsp; 262 signals processed</div>
+    <div style="font-size:0.85rem;opacity:0.75">Generated: 2026-06-29 15:56 UTC &nbsp;·&nbsp; 262 signals processed</div>
     <div style="display:flex;gap:16px;margin-top:20px;flex-wrap:wrap">
       <div style="background:rgba(239,68,68,0.2);border:1px solid rgba(239,68,68,0.4);border-radius:10px;padding:10px 18px;text-align:center">
-        <div style="font-size:1.6rem;font-weight:800">156</div>
+        <div style="font-size:1.6rem;font-weight:800">19</div>
         <div style="font-size:0.78rem;opacity:0.85">🔴 Critical</div>
       </div>
       <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:10px;padding:10px 18px;text-align:center">
-        <div style="font-size:1.6rem;font-weight:800">6</div>
+        <div style="font-size:1.6rem;font-weight:800">143</div>
         <div style="font-size:0.78rem;opacity:0.85">🟠 High</div>
       </div>
       <div style="background:rgba(234,179,8,0.2);border:1px solid rgba(234,179,8,0.4);border-radius:10px;padding:10px 18px;text-align:center">
@@ -45,15 +45,15 @@
     <div style="font-weight:700;font-size:1rem;margin-bottom:12px;color:#1f2937">📋 Top 3 this week</div>
     <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
           <span style="font-size:1.2rem">🔴</span>
-          <span style="flex:1;font-size:0.92rem;color:#111827">Application Server Remote Control Vulnerability</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Unauthenticated Access to Browser Automation Tool</span>
           <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">100/100</span>
         </div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
           <span style="font-size:1.2rem">🔴</span>
-          <span style="flex:1;font-size:0.92rem;color:#111827">AI Gateway Authentication Bypass Exposes API Credentials</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Authentication Bypass in Load Balancer Routing Logic</span>
           <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">100/100</span>
         </div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
           <span style="font-size:1.2rem">🔴</span>
-          <span style="flex:1;font-size:0.92rem;color:#111827">Message Processing Library Accepts Untrusted Data Without Validation</span>
+          <span style="flex:1;font-size:0.92rem;color:#111827">Load Balancer Allows Bypass of Client Certificate Requirements</span>
           <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:10px;font-size:0.78rem;font-weight:700">100/100</span>
         </div>
   </div>
@@ -70,7 +70,7 @@
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
       <div style="background:#ef4444;padding:14px 20px;display:flex;align-items:center;gap:12px">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">1</span>
-        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Application Server Remote Control Vulnerability</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Unauthenticated Access to Browser Automation Tool</span>
         <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">100/100</span>
       </div>
       <div style="padding:16px 20px">
@@ -78,8 +78,8 @@
           <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Vulnerability Management</span>
           <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 NVD</span>
         </div>
-        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> Attackers can impersonate our backend servers and inject malicious commands directly into IBM WebSphere Application Server, gaining full control over systems or crashing them without authentication.</p>
-        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Attackers will remotely execute code on our core application infrastructure, potentially accessing customer data, policy records, and payment systems with no audit trail.</em></p>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> An open-source workflow automation platform (n8n) running in certain configurations allows anyone on the network or any website to remotely control user browsers, access cookies, steal session data, and execute malicious code without any password or authentication required.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Attackers can steal customer authentication tokens, access sensitive policyholder or claims data in real-time, impersonate users, and move laterally through our systems to reach core financial and underwriting systems.</em></p>
         <table style="width:100%;border-collapse:collapse;background:#fef2f2;border-radius:8px;overflow:hidden;margin-bottom:14px">
           <thead>
             <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
@@ -95,7 +95,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">A successful exploit could trigger regulatory fines (SOX, state insurance regulations), customer litigation for data breach, claims handling failures, and severe reputational damage in the insurance market where trust is paramount.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Customer data breaches could trigger regulatory fines (GDPR, state insurance regulators), trigger mass claims for fraud and identity theft, and cause severe reputational damage that erodes customer trust and increases policy lapses. This creates both direct regulatory exposure and indirect revenue risk.</td>
         </tr>
             
         <tr>
@@ -103,7 +103,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Attackers can halt or degrade application availability, disrupting policy issuance, claims processing, and customer portals. Business continuity is at direct risk if systems serving policyholders go offline.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Attackers can disrupt critical workflow automation processes, inject false claims or policy modifications, and compromise the integrity of underwriting and claims data in real-time. This could paralyze core business operations and force emergency manual processing.</td>
         </tr>
             
         <tr>
@@ -111,12 +111,12 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">This vulnerability is actively exploitable in the wild with no workaround; patching IBM WebSphere is mandatory within 7 days. The vulnerability allows unauthenticated remote code execution, the highest technical severity.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Patch is already available (versions 2.25.7 and 2.26.2); any instance running earlier versions is immediately exploitable with no user interaction required. Immediate inventory and remediation is mandatory given the public nature of this vulnerability.</td>
         </tr>
           </tbody>
         </table>
         <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
-          <strong>✅ Recommended action:</strong> Initiate emergency patch deployment for all IBM WebSphere instances within 72 hours and confirm completion by end of week; simultaneously conduct network segmentation audit to restrict backend server communication pathways.
+          <strong>✅ Recommended action:</strong> Immediately audit all production instances of n8n for affected versions; prioritize upgrading to 2.25.7 or 2.26.2 this week, and disable HTTP transport mode on any n8n deployment handling policyholder or financial data until patched.
         </div>
       </div>
     </div>
@@ -124,16 +124,16 @@
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
       <div style="background:#ef4444;padding:14px 20px;display:flex;align-items:center;gap:12px">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">2</span>
-        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">AI Gateway Authentication Bypass Exposes API Credentials</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Authentication Bypass in Load Balancer Routing Logic</span>
         <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">100/100</span>
       </div>
       <div style="padding:16px 20px">
         <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
-          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Vulnerability Management</span>
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Network Security</span>
           <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 NVD</span>
         </div>
-        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> An unpatched AI proxy server used to manage LLM API calls allows attackers to bypass authentication and access sensitive API credentials without authorization.</p>
-        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Attackers will steal OpenAI and third-party API credentials, enabling unauthorized AI service abuse, data exfiltration, and injection attacks against downstream systems.</em></p>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> Attackers can exploit a flaw in our load balancer software to trick it into serving protected admin and internal endpoints without requiring authentication, by crafting requests with encoded path traversal characters.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Unauthorized users will gain unrestricted access to sensitive administrative functions, customer data systems, and configuration controls across our platform.</em></p>
         <table style="width:100%;border-collapse:collapse;background:#fef2f2;border-radius:8px;overflow:hidden;margin-bottom:14px">
           <thead>
             <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
@@ -149,7 +149,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Compromised API credentials enable fraudulent AI transactions, unauthorized data access, and potential regulatory fines for failing to protect customer data. Exposure of financial data through AI systems could trigger significant breach notification costs and reputational damage with customers and investors.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Regulatory fines under PCI-DSS, SOX, and state insurance laws for unauthorized access to customer financial data; potential liability claims from affected customers; reputational damage reducing policyholder retention and brand trust in the insurance sector.</td>
         </tr>
             
         <tr>
@@ -157,7 +157,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Attackers can inject malicious prompts into AI-driven customer service, underwriting, or claims systems, corrupting decision outputs and operational integrity. Service disruption or compromise of AI-assisted processes directly impacts claims processing, policy issuance, and customer interactions.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Attackers may alter policy records, payment processing rules, claims data, or premium calculations without audit trail, forcing system shutdowns and manual reconciliation. Service availability and data integrity are directly threatened.</td>
         </tr>
             
         <tr>
@@ -165,12 +165,12 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">This vulnerability is actively exploitable with no mitigation available below version 1.84.0 and must be patched immediately. Exploitation requires zero additional sophistication and leaves comprehensive audit trails of unauthorized API usage.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Patch availability exists for all affected Traefik versions (2.11.48+, 3.6.19+, 3.7.3+); exploitation is trivial and requires no special tools. Immediate upgrade is mandatory to close the authentication gap.</td>
         </tr>
           </tbody>
         </table>
         <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
-          <strong>✅ Recommended action:</strong> Audit all LiteLLM deployments for versions below 1.84.0 immediately; prioritize upgrade to 1.84.0+ within 48 hours and revoke all API credentials that passed through vulnerable instances.
+          <strong>✅ Recommended action:</strong> Approve emergency change control this week to upgrade all Traefik instances to patched versions, with parallel validation in staging; simultaneously audit access logs for signs of exploitation in the past 30 days.
         </div>
       </div>
     </div>
@@ -178,16 +178,16 @@
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
       <div style="background:#ef4444;padding:14px 20px;display:flex;align-items:center;gap:12px">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:800;font-size:1.1rem;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center">3</span>
-        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Message Processing Library Accepts Untrusted Data Without Validation</span>
+        <span style="color:#fff;font-weight:700;font-size:1rem;flex:1">Load Balancer Allows Bypass of Client Certificate Requirements</span>
         <span style="background:rgba(255,255,255,0.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:0.8rem;font-weight:600">100/100</span>
       </div>
       <div style="padding:16px 20px">
         <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
-          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Vulnerability Management</span>
+          <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📂 Network Security</span>
           <span style="background:#f3f4f6;color:#374151;padding:3px 10px;border-radius:8px;font-size:0.8rem">📡 NVD</span>
         </div>
-        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> Our ASP.NET applications using an older version of MessagePack are configured to accept external data without the security controls designed to prevent malicious input attacks.</p>
-        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Attackers can send specially crafted requests that consume excessive server resources, causing service degradation or outage for our customers and policy holders.</em></p>
+        <p style="margin:0 0 8px;color:#111827"><strong>What's happening?</strong> An attacker can reach protected backend systems without presenting required security credentials by exploiting how our Traefik load balancer handles multiple security policies on the same network connection.</p>
+        <p style="margin:0 0 16px;color:#6b7280;font-size:0.92rem"><em>Als we niets doen: Unauthorized users could gain direct access to sensitive customer data, policy records, and transaction systems protected by mutual certificate authentication, exposing the company to data breaches and regulatory violations.</em></p>
         <table style="width:100%;border-collapse:collapse;background:#fef2f2;border-radius:8px;overflow:hidden;margin-bottom:14px">
           <thead>
             <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
@@ -203,7 +203,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">An extended outage could trigger SLA breaches, policyholder refund claims, regulatory fines for service disruption, and reputational damage in a market where availability and trust are core differentiators. Fraud claims tied to service failures could increase significantly.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">A successful breach exposes policyholder personal and financial data, triggering mandatory regulatory fines (GDPR, state insurance regulators), class-action litigation, and substantial claims reserves. Reputation damage erodes customer trust and increases policy cancellations.</td>
         </tr>
             
         <tr>
@@ -211,7 +211,7 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">The vulnerability enables denial-of-service attacks that can knock critical policy processing, claims systems, and customer portals offline without warning. Recovery requires incident response activation and potential manual transaction processing.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">Unauthorized access to core policy management, claims processing, and customer account systems could cause immediate service degradation and force emergency system shutdowns for forensic investigation and remediation.</td>
         </tr>
             
         <tr>
@@ -219,12 +219,12 @@
           <td style="padding:8px 12px">
             <span style="background:#ef4444;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.78rem;font-weight:700">🔴 Critical</span>
           </td>
-          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">This library flaw is actively exploitable and requires immediate patching to version 2.5.301 or 3.1.7 across all affected applications. The default insecure configuration means no code changes are needed by attackers—only network access to affected endpoints.</td>
+          <td style="padding:8px 12px;color:#374151;font-size:0.9rem">This vulnerability is actively exploitable without authentication and affects all Traefik versions 3.7.0–3.7.2; immediate patching to 3.7.3 or replacement of affected load balancers is required within 48 hours.</td>
         </tr>
           </tbody>
         </table>
         <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:10px 14px;border-radius:0 8px 8px 0;font-size:0.9rem;color:#0c4a6e">
-          <strong>✅ Recommended action:</strong> Immediately inventory all ASP.NET applications using MessagePack, prioritize patching within 48 hours, and enable monitoring for suspicious serialization requests while patches are deployed.
+          <strong>✅ Recommended action:</strong> Authorize emergency patching of all Traefik instances to version 3.7.3 within 48 hours and conduct immediate access logs review for any signs of exploitation targeting certificate-protected endpoints.
         </div>
       </div>
     </div>
@@ -243,7 +243,7 @@
       </tr></thead>
       <tbody><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">4</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Automation Platform Credential Theft via Request Interceptio</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Load Balancer Bypasses Client Authentication on Secure Conne</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -252,7 +252,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">5</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Unprotected Workflow Automation Exposes Browser and Data Acc</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform SQL Injection in Database Nodes</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -261,7 +261,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">6</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Allows Unauthorized Database Ac</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Allows Complete System Takeover</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -270,7 +270,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">7</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Remote Code Execution Flaw</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Server Remote Control Vulnerability</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -279,7 +279,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">8</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Remote Code Execution Vulnerabi</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Credential Theft Vulnerability</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -288,7 +288,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">9</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Workflow Automation Platform Database Injection Flaw</td>
+          <td style="padding:8px 12px;font-size:0.88rem">CI/CD Pipeline Escape Allows Root Access to Servers</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
@@ -297,7 +297,7 @@
           <td style="padding:8px 12px;text-align:center">🔴</td>
         </tr><tr style="border-bottom:1px solid #f3f4f6">
           <td style="padding:8px 12px;color:#6b7280;font-size:0.85rem">10</td>
-          <td style="padding:8px 12px;font-size:0.88rem">Malicious Shortcut File Injection via Media Downloads</td>
+          <td style="padding:8px 12px;font-size:0.88rem">Unauthenticated Admin Account Takeover via WordPress Plugin</td>
           <td style="padding:8px 12px;text-align:center">
             <span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-size:0.78rem;font-weight:700">100</span>
           </td>
